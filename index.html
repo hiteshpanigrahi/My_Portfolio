@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#home" class="logo">Hitesh<span>.</span> </a>
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <button id="theme-switch">
+
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffff00">
+                <path
+                    d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffff00">
+                <path
+                    d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z" />
+            </svg>
+            
+        </button>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <!-- <a href="#Contact">Contact</a> -->
+        </nav>
+
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi,I'm <span>Hitesh</span></h1>
+            <h3>I'm a <span>WEB DEV</span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nam ea, quo nobis tempora tempore. In
+                harum, laboriosam necessitatibus quas numquam doloremque, nostrum ducimus magnam voluptatibus ab nemo
+                earum rerum?</p>
+
+            <div class="social-icons">
+                <a style="--icon-color: #11998f;" href="#">
+                    <i class="bx bxl-github"></i>
+                </a>
+
+                <a style="--icon-color: #0A66C2;" href="#">
+                    <i class="bx bxl-linkedin-square"></i>
+                </a>
+
+                <a style="--icon-color: #d62976;" href="#">
+                    <i class="bx bxl-instagram-alt"></i>
+                </a>
+
+                <a style="--icon-color: black;" href="#">
+                    <i class="bx bxl-twitter"></i>
+                </a>
+            </div>
+
+            <div class="btn-group">
+                <a href="#" class="btn">Resume</a>
+                <a href="#contact" class="btn">Contact</a>
+            </div>
+        </div>
+
+        <div class="home-img">
+            <img src="image1.jpg" alt="">
+        </div>
+
+    </section>
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="image2.jpg" alt="">
+        </div>
+        <div class="about-content">
+            <h2>About <span>Me</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sunt, nemo fugiat sed eaque nihil error
+                nostrum sint, quisquam nam aliquid nisi assumenda ducimus quibusdam mollitia? Rem amet blanditiis
+                obcaecati?</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <h2 class="heading"> My <span>Services</span></h2>
+        <div class="service-container">
+            <div class="service-box">
+                <div class="service-info">
+                    <i class="bx bxl-figma"></i>
+                    <h4>desiacbkj</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempore totam cumque
+                        perferendis, esse dicta sit! Nam ipsum, facilis quos placeat repellendus, quam perspiciatis
+                        praesentium exercitationem enim at accusamus et?</p>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-info">
+                    <i class="bx bxl-code"></i>
+                    <h4>coder</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempore totam cumque
+                        perferendis, esse dicta sit! Nam ipsum, facilis quos placeat repellendus, quam perspiciatis
+                        praesentium exercitationem enim at accusamus et?</p>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-info">
+                    <i class="bx bxl-github"></i>
+                    <h4>github</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempore totam cumque
+                        perferendis, esse dicta sit! Nam ipsum, facilis quos placeat repellendus, quam perspiciatis
+                        praesentium exercitationem enim at accusamus et?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h1 class="headings">Latest <span>Projects</span></h1>
+        <div class="projects-box">
+            <div class="project-card">
+                <img src="project1.png" alt="">
+                <h3>Project 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero enim, itaque sunt quo quia odio
+                    molestiae aut hic ea doloremque culpa repellat magni dignissimos adipisci cum perspiciatis
+                    repudiandae
+                    labore.</p>
+                <div class="btn">preview</div>
+            </div>
+            <div class="project-card">
+                <img src="project2.png" alt="">
+                <h3>Project 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero enim, itaque sunt quo quia odio
+                    molestiae aut hic ea doloremque culpa repellat magni dignissimos adipisci cum perspiciatis
+                    repudiandae
+                    labore.</p>
+                <div class="btn">preview</div>
+            </div>
+            <div class="project-card">
+                <img src="project3.png" alt="">
+                <h3>Project 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero enim, itaque sunt quo quia odio
+                    molestiae aut hic ea doloremque culpa repellat magni dignissimos adipisci cum perspiciatis
+                    repudiandae
+                    labore.</p>
+                <div class="btn">preview</div>
+            </div>
+            <div class="project-card">
+                <img src="project4.png" alt="">
+                <h3>Project 4</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero enim, itaque sunt quo quia odio
+                    molestiae aut hic ea doloremque culpa repellat magni dignissimos adipisci cum perspiciatis
+                    repudiandae
+                    labore.</p>
+                <div class="btn">preview</div>
+            </div>
+            <div class="project-card">
+                <img src="project5.png" alt="">
+                <h3>Project 5</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero enim, itaque sunt quo quia odio
+                    molestiae aut hic ea doloremque culpa repellat magni dignissimos adipisci cum perspiciatis
+                    repudiandae
+                    labore.</p>
+                <div class="btn">preview</div>
+            </div>
+            <div class="project-card">
+                <img src="project6.png" alt="">
+                <h3>Project 6</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero enim, itaque sunt quo quia odio
+                    molestiae aut hic ea doloremque culpa repellat magni dignissimos adipisci cum perspiciatis
+                    repudiandae
+                    labore.</p>
+                <div class="btn">preview</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="#">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="E-Mail">
+                </div>
+
+                <div class="input-box">
+                    <input type="number" placeholder="Phone number">
+                    <input type="text" placeholder="Subject">
+                </div>
+            </div>
+
+            <div class="input-group-2">
+                <textarea name="" id="" placeholder="Your Message" cols="30" rows="10"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </div>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="social-icons">
+            <a style="--icon-color: #11998f;" href="#">
+                <i class="bx bxl-github"></i>
+            </a>
+
+            <a style="--icon-color: #0A66C2;" href="#">
+                <i class="bx bxl-linkedin-square"></i>
+            </a>
+
+            <a style="--icon-color: #d62976;" href="#">
+                <i class="bx bxl-instagram-alt"></i>
+            </a>
+
+            <a style="--icon-color: black;" href="#">
+                <i class="bx bxl-twitter"></i>
+            </a>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+            <li>
+                <a href="#services">Services</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+
+        <p class="copyright" id="copyright">
+            © Hitesh Panigrahi | All Rights Reserved
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
