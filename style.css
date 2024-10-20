@@ -3,12 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    scroll-behavior: smooth;
-    font-family: "Fira Mono";
+    scroll-behavior:smooth;
+    font-family: "Cascadia Code";
 }
 
 :root {
-    --bg-color: white;
+    --bg-color: #f3f3f3;
     --text-color: #000715;
     --main-color: #362d6d;
     --sec-color: #9a8dec;
