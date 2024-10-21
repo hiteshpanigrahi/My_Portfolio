@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </head>
 
 <body>
 
-    <header class="header">
+    <header data-aos="zoom-in" class="header">
         <a href="#home" class="logo">Hitesh<span>.</span> </a>
         <i class="bx bx-menu" id="menu-icon"></i>
         <button id="theme-switch">
@@ -39,7 +41,7 @@
 
     </header>
 
-    <section class="home" id="home">
+    <section data-aos="zoom-in" class="home" id="home">
         <div class="home-content">
             <h1>Hi,I'm <span>Hitesh</span></h1>
             <h3>I'm a <span>WEB DEV</span></h3>
@@ -76,7 +78,7 @@
         </div>
 
     </section>
-    <section class="about" id="about">
+    <section data-aos="zoom-in" class="about" id="about">
         <div class="about-img">
             <img src="image2.jpg" alt="">
         </div>
@@ -88,7 +90,7 @@
             <a href="#" class="btn">Read More</a>
         </div>
     </section>
-    <section class="services" id="services">
+    <section data-aos="zoom-in" class="services" id="services">
         <h2 class="heading"> My <span>Services</span></h2>
         <div class="service-container">
             <div class="service-box">
@@ -121,7 +123,7 @@
         </div>
     </section>
 
-    <section class="projects" id="projects">
+    <section data-aos="zoom-in" class="projects" id="projects">
         <h1 class="headings">Latest <span>Projects</span></h1>
         <div class="projects-box">
             <div class="project-card">
@@ -181,7 +183,7 @@
         </div>
     </section>
 
-    <section class="contact" id="contact">
+    <section data-aos="zoom-in" class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
 
         <form action="#">
@@ -244,8 +246,11 @@
             © Hitesh Panigrahi | All Rights Reserved
         </p>
     </footer>
-    
+    <script>
+        AOS.init();
+    </script>
     <script src="script.js"></script>
+
 </body>
 
 </html>
