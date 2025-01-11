@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons/css/all/all.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
@@ -16,8 +19,8 @@
 <body>
 
     <header data-aos="zoom-in" class="header">
-        <a href="#home" class="logo">Hitesh<span>.</span> </a>
-        <i class="bx bx-menu" id="menu-icon"></i>
+        <a href="#home" class="logo">Hitesh<span class="RGB">.</span> </a>
+        <i class="fi fi-br-bars-staggered" id="menu-icon"></i>
         <button id="theme-switch">
 
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffff00">
@@ -43,27 +46,28 @@
 
     <section data-aos="zoom-in" class="home" id="home">
         <div class="home-content">
-            <h1>Hi,I'm <span>Hitesh</span></h1>
-            <h3>I'm a <span>WEB DEV</span></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nam ea, quo nobis tempora tempore. In
-                harum, laboriosam necessitatibus quas numquam doloremque, nostrum ducimus magnam voluptatibus ab nemo
-                earum rerum?</p>
+            <h1>Hi,I'm <span class="RGB">Hitesh</span></h1>
+            <h3>I'm a <span class="RGB">WEB DEV</span></h3>
+            <p>Hello! I'm a dedicated electronics engineering student passionate about exploring the intersection of
+                hardware and software. With a knack for coding and a thirst for knowledge, I thrive on diving into new
+                projects and problem-solving. Let's connect to share insights and ideas in the exciting world of tech!
+            </p>
 
             <div class="social-icons">
-                <a style="--icon-color: #11998f;" href="#">
-                    <i class="bx bxl-github"></i>
+                <a style="--icon-color: #11998f;" href="https://github.com/hiteshpanigrahi">
+                    <i class="fi fi-brands-github"></i>
                 </a>
 
-                <a style="--icon-color: #0A66C2;" href="#">
-                    <i class="bx bxl-linkedin-square"></i>
+                <a style="--icon-color: #0A66C2;" href="https://www.linkedin.com/in/hitesh-panigrahi-2244312b7/">
+                    <i class="fi fi-brands-linkedin"></i>
                 </a>
 
-                <a style="--icon-color: #d62976;" href="#">
-                    <i class="bx bxl-instagram-alt"></i>
+                <a style="--icon-color: #d62976;" href="https://www.instagram.com/_the_smartass?igsh=eHR3MWZxdmUwaXJ3">
+                    <i class="fi fi-brands-instagram"></i>
                 </a>
 
-                <a style="--icon-color: black;" href="#">
-                    <i class="bx bxl-twitter"></i>
+                <a style="--icon-color: black;" href="https://www.threads.net/@_the_smartass">
+                    <i class="fi fi-brands-twitter-alt-circle"></i>
                 </a>
             </div>
 
@@ -74,160 +78,275 @@
         </div>
 
         <div class="home-img">
-            <img src="image1.jpg" alt="">
+            <img src="Images/image1.png" alt="">
         </div>
+
+        <!-- --------------------ABOUT------------------------ -->
 
     </section>
     <section data-aos="zoom-in" class="about" id="about">
         <div class="about-img">
-            <img src="image2.jpg" alt="">
+            <img src="Images/image2.jpg" alt="">
         </div>
         <div class="about-content">
-            <h2>About <span>Me</span></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sunt, nemo fugiat sed eaque nihil error
-                nostrum sint, quisquam nam aliquid nisi assumenda ducimus quibusdam mollitia? Rem amet blanditiis
-                obcaecati?</p>
-            <a href="#" class="btn">Read More</a>
+            <h2>About <span class="RGB">Me</span></h2>
+
+            <p>Hello! I’m an enthusiastic electronics engineering student with a deep passion for bridging the gap
+                between hardware and software. I love turning ideas into reality by designing innovative solutions
+                and
+                coding smart systems. Whether it’s prototyping electronic circuits, diving into IoT projects, or
+                exploring web development, I enjoy challenging myself with new opportunities to learn and grow.
+                Problem-solving fuels my creativity, and I’m always eager to collaborate, exchange ideas, and stay
+                at
+                the forefront of the tech world. Let’s connect and make amazing things happen together!
+            </p>
+            <div class="tabs">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Programming Languages</span><br>Proficient in C++, Python, and JavaScript
+                        programming languages.
+                        <br>Skilled in tools like Visual Studio Code, Git, and GitHub.
+                    </li>
+                    <li><span>Web Development</span><br>Web UI and Designing <br>Strong in HTML, CSS, JS
+                        and responsive web design.</li>
+                    <li><span>PCB Designing</span><br>Proficient in various PCB Designing.
+                        Softwares<br>KiCAD, Altium, EagleCAD, Proteus.</li>
+                    <li><span>Internet of Things(IoT)</span><br>Experience in building various IoT
+                        projects.
+                        <br>Proficient in different IoT platforms.
+                    </li>
+                    <li><span>Electronics Tinkering</span><br>Hands-on experience with Arduino,
+                        ESP8266/ESP32, and various microcontrollers. <br>Strong understanding of circuit design,
+                        simulation, and prototyping. <br>Experience in interfacing and intergrating various sensors
+                        and
+                        electronic components</li>
+                    <li><span>3D Modeling and CAD Designing</span><br>Skilled in 3D modeling and designing
+                        using Fusion 360. <br>Experienced in 3D printing.</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>Intern at Digital Bhem</span>
+                        <br>Artificial Intelligence Internship
+                        <br>Jun 2024
+                        <br>India · Remote
+                    </li>
+                    <li><span>Internet of Things - IoT</span>
+                        <br>Self Taught
+                        <br>Sept 2020
+                        <br>India
+                    </li>
+                    <li><span>Web Development</span>
+                        <br>Self Taught
+                        <br>Sept 2020
+                        <br>India
+                    </li>
+                    <li><span>C++</span>
+                        <br>Self Taught
+                        <br>Sept 2017
+                        <br>India
+                    </li>
+                    <li><span>PCB Designing</span>
+                        <br>Self Taught
+                        <br>Sept 2016
+                        <br>India
+                    </li>
+                    <li><span>Electronics</span>
+                        <br>Self Taught
+                        <br>Sept 2014
+                        <br>India
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>B-Tech</span>
+                        <br>Odisha University of Technology and Research
+                        <br>Bachelor of Technology - BTech
+                        <br>Electronics and Instrumentation Engineering
+                        <br>2023 - 2027
+                    </li>
+
+                    <li><span>Diploma</span>
+                        <br>Uma Charan Pattnaik
+                        <br>Diploma
+                        <br>Electronics and TeleCommunication
+                        <br>Aug 2019 - Sep 2022
+                        <br>Grade: 88%
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
+
+    <!-- --------------------SERVICES------------------------ -->
+
     <section data-aos="zoom-in" class="services" id="services">
-        <h2 class="heading"> My <span>Services</span></h2>
+        <h2 class="heading"> My <span class="RGB">Services</span></h2>
         <div class="service-container">
             <div class="service-box">
                 <div class="service-info">
-                    <i class="bx bxl-figma"></i>
-                    <h4>desiacbkj</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempore totam cumque
-                        perferendis, esse dicta sit! Nam ipsum, facilis quos placeat repellendus, quam perspiciatis
-                        praesentium exercitationem enim at accusamus et?</p>
+                    <img src="Icons/coding.png" alt="">
+                    <h4>Web Development</h4>
+                    <p>"Crafting modern and responsive websites with a focus on user experience and functionality. I
+                        combine creativity with technical expertise to deliver custom web solutions for businesses and
+                        personal projects."</p>
+                </div>
+                <div class="services-1-icons">
+                    <img src="Icons/html-5.png" alt="">
+                    <img src="Icons/css3.png" alt="">
+                    <img src="Icons/java-script.png" alt="">
+                    <img src="Icons/reactJS.png" alt="">
+                    <img src="Icons/visual-studio.png" alt="">
+                    <img src="Icons/c-.png" alt="">
+                    <img src="Icons/python.png" alt="">
+                    <img src="Icons/github.png" alt="">
+                    <img src="Icons/chatgpt.png" alt="" style="filter: invert(1);">
                 </div>
             </div>
             <div class="service-box">
                 <div class="service-info">
-                    <i class="bx bxl-code"></i>
-                    <h4>coder</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempore totam cumque
-                        perferendis, esse dicta sit! Nam ipsum, facilis quos placeat repellendus, quam perspiciatis
-                        praesentium exercitationem enim at accusamus et?</p>
+                    <img src="Icons/pcb-board.png" alt="">
+                    <h4>PCB Designing</h4>
+                    <p>"Expert in creating efficient, high-quality PCB designs using industry-standard tools like KiCAD,
+                        EagleCAD, Proteus, and Altium. I transform schematics into professional layouts, ready for
+                        fabrication and assembly."</p>
+                </div>
+                <div class="services-2-icons">
+                    <img src="Icons/Altium.png" alt="" style="width: 100%;">
+
+                    <img src="Icons/Proteus.png" alt="" style="width: 60%;">
+                    <img src="Icons/eagleeda.png" alt="">
+                    <img src="Icons/KiCad.png" alt="" style="width: 100%;">
+                    <img src="Icons/easyeda.jpg" alt="">
                 </div>
             </div>
             <div class="service-box">
                 <div class="service-info">
-                    <i class="bx bxl-github"></i>
-                    <h4>github</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempore totam cumque
-                        perferendis, esse dicta sit! Nam ipsum, facilis quos placeat repellendus, quam perspiciatis
-                        praesentium exercitationem enim at accusamus et?</p>
+                    <img src="Icons/soldering.png" alt="">
+                    <h4>Electronic Projects</h4>
+                    <p>"Bringing ideas to life with rapid electronics prototyping. I design, build, and test functional
+                        electronic circuits tailored to your project's needs, ensuring innovative and reliable
+                        solutions."</p>
+                </div>
+                <div class="services-3-icons">
+                    <img src="Icons/arduino.png" alt="">
+                    <img src="Icons/raspberrypi.png" alt="" style="width: 100%;">
+                    <img src="Icons/esp.jpg" alt="">
+                    <img src="Icons/iot.png" alt="">
+                    <img src="Icons/soldering2.png" alt="">
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- --------------------PROJECTS------------------------ -->
 
     <section data-aos="zoom-in" class="projects" id="projects">
-        <h1 class="headings">Latest <span>Projects</span></h1>
+        <h1 class="headings">Latest <span class="RGB">Projects</span></h1>
         <div class="projects-box">
             <div class="project-card">
-                <img src="project1.png" alt="">
-                <h3>Project 1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero enim, itaque sunt quo quia odio
-                    molestiae aut hic ea doloremque culpa repellat magni dignissimos adipisci cum perspiciatis
-                    repudiandae
-                    labore.</p>
-                <div class="btn">preview</div>
+                <img src="Images/project1.jpg" alt="">
+                <h3>PID Line Follower</h3>
+                <p>Built using Arduino Nano, TB6612FNG motor driver, and a 7-channel IR array, this high-speed bot
+                    precisely tracks black lines. Powered by a 7.2V LiPo battery and 600 RPM N20 gear motors. All the
+                    components are soldered on a perfboard for a neat design.</p>
+                <div class="btn">GitHub</div>
             </div>
             <div class="project-card">
-                <img src="project2.png" alt="">
-                <h3>Project 2</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero enim, itaque sunt quo quia odio
-                    molestiae aut hic ea doloremque culpa repellat magni dignissimos adipisci cum perspiciatis
-                    repudiandae
-                    labore.</p>
-                <div class="btn">preview</div>
+                <img src="Images/project2.jpg" alt="">
+                <h3>16-DOF Humanoid Bot</h3>
+                <p>Powered by Arduino Mega and 16 MG995 servo, this Bluetooth-controlled robot (via
+                    HC-05) features a hand-crafted sheet metal body. It performs walking, dancing, and various motions,
+                    running on dual 3.7V lithium-ion cells. </p>
+                <div class="btn">GitHub</div>
             </div>
             <div class="project-card">
-                <img src="project3.png" alt="">
-                <h3>Project 3</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero enim, itaque sunt quo quia odio
-                    molestiae aut hic ea doloremque culpa repellat magni dignissimos adipisci cum perspiciatis
-                    repudiandae
-                    labore.</p>
-                <div class="btn">preview</div>
+                <img src="Images/project3.jpg" alt="">
+                <h3>8-DOF Humanoid Bot</h3>
+                <p>Powered by ESP32 and 8 MG995 servos, this robot has a OLED for facial expressions and
+                    voice capabilities. Controlled via a custom-designed WiFi app with joystick controls and preset
+                    movements, it can walk, talk, and dance.</p>
+                <div class="btn">GitHub</div>
             </div>
             <div class="project-card">
-                <img src="project4.png" alt="">
-                <h3>Project 4</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero enim, itaque sunt quo quia odio
-                    molestiae aut hic ea doloremque culpa repellat magni dignissimos adipisci cum perspiciatis
-                    repudiandae
-                    labore.</p>
-                <div class="btn">preview</div>
+                <img src="Images/project4.jpg" alt="">
+                <h3>IoT Based Smart LED Matrix</h3>
+                <p>A 32x8 LED matrix powered by ESP8266 and MAX7219 drivers. Displays an NTP clock, weather,
+                    temperature, humidity, news, and custom messages. Configurable via a web interface, with data
+                    fetched using API integration. Built with 5mm plywood.</p>
+                <div class="btn">GitHub</div>
             </div>
             <div class="project-card">
-                <img src="project5.png" alt="">
-                <h3>Project 5</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero enim, itaque sunt quo quia odio
-                    molestiae aut hic ea doloremque culpa repellat magni dignissimos adipisci cum perspiciatis
-                    repudiandae
-                    labore.</p>
-                <div class="btn">preview</div>
+                <img src="Images/project5.png" alt="">
+                <h3>Hituino v1 </h3>
+                <p>A barebones Arduino designed from scratch using KiCAD. Compact and efficient, it offers full GPIO,
+                    analog, and digital pin functionality like the Uno R3. Ideal for DIY projects, it’s cost-effective,
+                    optimized, and tailored for versatile applications.</p>
+                <div class="btn">GitHub</div>
             </div>
             <div class="project-card">
-                <img src="project6.png" alt="">
-                <h3>Project 6</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero enim, itaque sunt quo quia odio
-                    molestiae aut hic ea doloremque culpa repellat magni dignissimos adipisci cum perspiciatis
-                    repudiandae
-                    labore.</p>
-                <div class="btn">preview</div>
+                <img src="Images/project6.png" alt="">
+                <h3>IoT Based Home Automation</h3>
+                <p>An IoT-based home automation system using the ESP12E module to control up to 4 appliances remotely
+                    from anywhere in the world. It offers seamless control and real-time status updates. The custom PCB
+                    is designed using KiCAD for compactness.</p>
+                <div class="btn">GitHub</div>
             </div>
         </div>
     </section>
 
-    <section data-aos="zoom-in" class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
+    <!-- --------------------Contact------------------------ -->
 
-        <form action="#">
-            <div class="input-group">
+    <section data-aos="zoom-in" class="contact" id="contact">
+        <h2 class="heading">Contact <span class="RGB">Me</span></h2>
+
+        <form name="submit-to-google-sheet">
+            <div class=" input-group">
                 <div class="input-box">
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="E-Mail">
+                    <input type="text" name="Name" placeholder="Full Name">
+                    <input type="email" name="E-Mail" placeholder="E-Mail">
                 </div>
 
                 <div class="input-box">
-                    <input type="number" placeholder="Phone number">
-                    <input type="text" placeholder="Subject">
+                    <input type="number" name="Phone" placeholder="Phone number">
+                    <input type="text" name="Subject" placeholder="Subject">
                 </div>
             </div>
 
             <div class="input-group-2">
-                <textarea name="" id="" placeholder="Your Message" cols="30" rows="10"></textarea>
+                <textarea name="Message" placeholder="Your Message" cols="30" rows="11"></textarea>
                 <input type="submit" value="Send Message" class="btn">
             </div>
         </form>
+        <span id="msg"></span>
     </section>
+
+    <!-- --------------------Footer------------------------ -->
 
     <footer class="footer">
         <div class="social-icons">
-            <a style="--icon-color: #11998f;" href="#">
-                <i class="bx bxl-github"></i>
+            <a style="--icon-color: #11998f;" href="https://github.com/hiteshpanigrahi">
+                <i class="fi fi-brands-github"></i>
             </a>
 
-            <a style="--icon-color: #0A66C2;" href="#">
-                <i class="bx bxl-linkedin-square"></i>
+            <a style="--icon-color: #0A66C2;" href="https://www.linkedin.com/in/hitesh-panigrahi-2244312b7/">
+                <i class="fi fi-brands-linkedin"></i>
             </a>
 
-            <a style="--icon-color: #d62976;" href="#">
-                <i class="bx bxl-instagram-alt"></i>
+            <a style="--icon-color: #d62976;" href="https://www.instagram.com/_the_smartass?igsh=eHR3MWZxdmUwaXJ3">
+                <i class="fi fi-brands-instagram"></i>
             </a>
 
-            <a style="--icon-color: black;" href="#">
-                <i class="bx bxl-twitter"></i>
+            <a style="--icon-color: black;" href="https://www.threads.net/@_the_smartass">
+                <i class="fi fi-brands-twitter-alt-circle"></i>
             </a>
         </div>
         <ul class="list">
-            <li>
-                <a href="#">FAQ</a>
-            </li>
             <li>
                 <a href="#services">Services</a>
             </li>
