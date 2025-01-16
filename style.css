@@ -65,7 +65,7 @@ html {
 body {
     background: var(--bg-color);
     color: var(--text-color);
-    cursor: url("cursor.png"), auto;
+    cursor: url("Icons/cursor.png"), auto;
 }
 
 header {
